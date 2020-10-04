@@ -1,0 +1,7 @@
+import matplotlib.pyplot as plt
+y=[1];x=[0];h=0.1
+for i in range(1000):
+    y.append((1+h)*y[i]-2*h*x[i]/y[i])
+    x.append(x[i]+0.001)
+plt.plot(x,y)
+plt.show()
